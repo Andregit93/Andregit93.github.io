@@ -223,6 +223,7 @@
         const myAlert = document.querySelector('.my-alert');
         form.addEventListener('submit', e => {
             e.preventDefault()
+            // menghilangkan tombol kirim, menampilkan tombol loading
             btnLoading.classList.toggle('d-none');
             btnKirim.classList.toggle('d-none');
             fetch(scriptURL, {
@@ -230,9 +231,12 @@
                     body: new FormData(form)
                 })
                 .then(response => {
+                    // menghilangkan tombol loading, menampilkan tombol kirim
                     btnLoading.classList.toggle('d-none');
                     btnKirim.classList.toggle('d-none');
+                    // manampilkan alert
                     myAlert.classList.toggle('d-none');
+                    // mereset form
                     form.reset();
                     console.log('Success!', response)
                 })
