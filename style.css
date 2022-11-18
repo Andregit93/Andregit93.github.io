@@ -20,3 +20,11 @@ section {
 #gallery .row > * {
     padding: 0;
 }
+
+.contact {
+    background-color: #e2edff;
+}
+
+footer p a {
+    text-decoration: none;
+}
