@@ -3,6 +3,11 @@
     background-color: #e2edff;
 }
 
+.img-thumbnail {
+    width: 200px;
+    clip-path: ellipse(70px 94px) !important;
+}
+
 .project {
     background-color: #e2edff;
 }
